@@ -88,7 +88,7 @@ Akreditasi akreditasiData[]  = {
         {"FISIP", "Sosiologi", "S1 Sosiologi", "A", "20-08-2024"},
         {"FK", "Kedokteran", "S1 Pendidikan Dokter", "A", "27-02-2025"},
         {"FK", "Kedokteran", "S1 Farmasi", "Baik Sekali", "23-01-20228"},
-        {"FH", "Ilmu Hukum" "S1 Ilmu Hukum", "A", "11-06-2026"}
+        {"FH", "Ilmu Hukum", "S1 Ilmu Hukum", "A", "11-06-2026"}
    };
 
 void TampilkanFakultas() {
@@ -380,9 +380,9 @@ void TampilkanAkreditasi(int fakultas, int jurusan, int prodi) {
         if (jurusan == 1) {
             index = 58 + (prodi -1);
         } else if (jurusan == 2) {
-            index = 62; 
+            index = 63; 
         } else if (jurusan == 3) {
-            index = 63 + (prodi - 1);
+            index = 64 + (prodi - 1);
         } 
    } else if (fakultas == 6) {
         if (jurusan == 1) {
