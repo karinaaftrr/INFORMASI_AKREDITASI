@@ -102,3 +102,351 @@ void TampilkanFakultas() {
     cout << "7. FK" << endl;
     cout << "8. FH" << endl;	
 }
+void TampilkanJurusan(int fakultas) {
+	switch (fakultas) { 
+    case 1:
+        cout << "Pilih Jurusan di FMIPA: " << endl;
+        cout << "1. Ilmu Komputer" << endl;
+        cout << "2. Matematika" << endl;
+        cout << "3. Fisika" << endl;
+        cout << "4. Biologi" << endl;
+        cout << "5. Kimia" << endl;
+        break;
+    case 2:
+        cout << "Pilih Jurusan di FKIP: " << endl;
+        cout << "1. Ilmu Pendidikan" << endl;
+        cout << "2. Pendidikan Bahasa dan Seni" << endl;
+        cout << "3. Pendidikan IPS" << endl;
+        cout << "4. Pendidikan MIPA" << endl;
+        break;
+   case 3:
+        cout << "Pilih Jurusan di FT: " << endl;
+        cout << "1. Teknik Elektro" << endl;
+        cout << "2. Teknik Sipil" << endl;
+        cout << "3. Teknik Mesin" << endl;
+        cout << "4. Teknik Kimia" << endl;
+        cout << "5. Teknik Geodesi dan Geomatika" << endl;
+        cout << "6. Teknik Geofisika" << endl;
+        cout << "7. Arsitektur" << endl;
+        break;
+   case 4:
+        cout << "Pilih Jurusan di FP: " << endl;
+        cout << "1. Agribisnis" << endl;
+        cout << "2. Teknik Pertanian" << endl;
+        cout << "3. Argoteknologi" << endl;
+        cout << "4. Ilmu Tanah" << endl;
+        cout << "5. Proteksi Tanaman" << endl;
+        cout << "6. Agronomi dan Holtikultura" << endl;
+        cout << "7. Teknologi Hasil Pertanian" << endl;
+        cout << "8. Peternakan" << endl;
+        cout << "9. Kehutanan" << endl;
+        cout << "10. Perikanan dan Ilmu Kelautan" << endl;
+        break;
+    case 5:
+        cout << "Pilih Jurusan di FEB: " << endl;
+        cout << "1. Akuntansi" << endl;
+        cout << "2. Ekonomi Pembangunan" << endl;
+        cout << "3. Manajemen" << endl;
+        break;
+    case 6:
+        cout << "Pilih Jurusan di FISIP: " << endl;
+        cout << "1. Hubungan Masyarakat" << endl;
+        cout << "2. Perpustakaan" << endl;
+        cout << "3. Hubungan Internasional" << endl;
+        cout << "4. Ilmu Administrasi" << endl;
+        cout << "5. Ilmu Komunikasi" << endl;
+        cout << "6. Ilmu Pemerintahan" << endl;
+        cout << "7. Sosiologi" << endl;
+        break;
+    case 7:
+        cout << "Pilih Jurusan di FK: " << endl;
+        cout << "1. Kedokteran" << endl;
+        break;
+    case 8:
+        cout << "Pilih Jurusan di FH: " << endl;
+        cout << "1. Hukum" << endl;
+     }
+  }
+  
+void TampilkanProdi(int jurusan, int fakultas) {
+    cout << "Program Studi yang tersedia:\n";
+    switch (fakultas) {
+        case 1: 
+            if (jurusan == 1) { 
+                cout << "1. D3 Manajemen Informatika\n";
+                cout << "2. S1 Sistem Informasi\n";
+                cout << "3. S1 Ilmu Komputer\n";
+                cout << "4. Ilmu Komputer PSDKU Way Kanan\n";
+            } else if (jurusan == 2) { 
+                cout << "1. S1 Matematika\n";
+            } else if (jurusan == 3) { 
+                cout << "1. S1 Fisika\n";
+            } else if (jurusan == 4) { 
+                cout << "1. S1 Biologi\n";
+                cout << "2. S1 Biologi Terapan\n";
+            } else if (jurusan == 5) {
+                cout << "1. S1 Kimia\n";
+            }
+            break;
+        case 2: 
+            if (jurusan == 1) { 
+                cout << "1. S1 Pendidikan Bimbingan dan Konseling\n";
+                cout << "2. S1 Pendidikan Teknologi Informasi\n";
+                cout << "3. S1 PGSD-D\n";
+                cout << "4. S1 PGSD\n";
+                cout << "5. S1 Pendidikan Jasmani\n";
+            } else if (jurusan == 2) { 
+                cout << "1. S1 Pendidikan Bahasa Indonesia dan Sastra Indonesia\n";
+                cout << "2. S1 Pendidikan Bahasa Inggris\n";
+                cout << "3. S1 Pendidikan Bahasa Lampung\n";
+                cout << "4. S1 Pendidikan Bahasa Perancis\n";
+                cout << "5. S1 Pendidikan Musik\n";
+                cout << "6. S1 Pendidikan Tari\n";
+            } else if (jurusan == 3) { 
+                cout << "1. S1 Pendidikan Ekonomi\n";
+                cout << "2. S1 Pendidikan Geografi\n";
+                cout << "3. S1 Pendidikan Sejarah\n";
+                cout << "4. S1 PPKN\n";
+            } else if (jurusan == 4) { 
+                cout << "1. S1 Pendidikan Fisika\n";
+                cout << "2. S1 Pendidikan Kimia\n";
+                cout << "3. S1 Pendidikan Matematika\n";
+                cout << "4. S1 Pendidikan Biologi\n";
+            }
+            break;
+        case 3: 
+            if (jurusan == 1) { 
+                cout << "1. S1 Teknik Elektro\n";
+                cout << "2. S1 Teknik Informatika\n";
+            } else if (jurusan == 2) { 
+                cout << "1. D3 Teknik Sipil\n";
+                cout << "2. S1 Teknik Sipil\n";
+                cout << "3. S1 Teknik Lingkungan\n";
+            } else if (jurusan == 3) { 
+                cout << "1. D3 Teknik Mesin\n";
+                cout << "2. D4 Terapan Rekayasa Otomotif\n";
+                cout << "3. S1 Teknik Mesin\n";
+            } else if (jurusan == 4) { 
+                cout << "1. S1 Teknik Kimia\n";
+            } else if (jurusan == 5) {
+            	cout << "1. D3 Teknik Survey dan Pemetaan\n";
+            	cout << "2. S1 Teknik Geologi\n";
+            	cout << "3. S1 Teknik Geodise\n";
+			}else if (jurusan == 6) { 
+                cout << "1. S1 Teknik Geofisika\n";
+            }else if (jurusan == 7) { 
+                cout << "1. S1 Arsitektur\n";
+            }
+            break;
+        case 4: 
+            if (jurusan == 1) { 
+                cout << "1. S1 Agribisnis\n";
+                cout << "2. S1 Penyuluhan Pertanian\n";
+            } else if (jurusan == 2) { 
+                cout << "1. S1 Teknik Pertanian\n";  
+            } else if (jurusan == 3) { 
+                cout << "1. D3 Perkebunan\n";
+                cout << "2. S1 Argoteknologi";
+            } else if (jurusan == 4) { 
+                cout << "1. S1 Ilmu Tanah\n";
+            } else if (jurusan == 5) { 
+                cout << "1. S1 Proteksi Tanaman\n";
+            } else if (jurusan == 6) { 
+                cout << "1. S1 Agronomi dan Holtikultura\n";
+            } else if (jurusan == 7) { 
+                cout << "1. S1 Teknologi Industri Pertanian\n";
+                cout << "2. S1 Teknologi Hasil Pertanian\n";
+            } else if (jurusan == 8) { 
+                cout << "1.S1 Nutrisi dan Teknologi Pakan Ternak\n";
+                cout << "2. S1 Peternakan\n";
+            } else if (jurusan == 9) { 
+                cout << "1. S1 Kehutanan\n";
+            } else if (jurusan == 10) { 
+                cout << "1. S1 Sumber Daya Akuatik\n";
+                cout << "2. S1 Ilmu Kelautan\n";
+            }
+            break;
+        case 5: 
+            if (jurusan == 1) { 
+                cout << "1. D3 Akuntansi\n";
+                cout << "2. D3 Akuntansi PSDKU Way Kanan\n";
+                cout << "3. D3 Perpajakan\n";
+                cout << "4. S1 Akuntansi\n";
+            } else if (jurusan == 2) { 
+                cout << "1. S1 Ekonomi Pembangunan\n";
+            } else if (jurusan == 3) { 
+                cout << "1. D3 Keuangan dan Perbankan\n";
+                cout << "2. D3 Manajemen Pemasaran\n";
+                cout << "3. S1 Manajemen\n";
+                cout << "4. S1 Bisnis Digital\n";  
+            }
+            break;
+        case 6: 
+            if (jurusan == 1) { 
+                cout << "1. D3 Hubungan Masyarakat\n";
+            } else if (jurusan == 2) { 
+                cout << "1. D3 Perpustakaan\n";
+            } else if (jurusan == 3) { 
+                cout << "1. S1 Hubungan Internasional\n";
+            } else if (jurusan == 4) { 
+                cout << "1. D3 Administrasi Perkantoran\n";
+                cout << "2. S1 Ilmu Administrasi Bisnis\n";
+                cout << "3. S1 Ilmu Administrasi Negara\n";
+            } else if (jurusan == 5) { 
+                cout << "1. S1 Ilmu Komunikasi\n";
+            } else if (jurusan == 6) { 
+                cout << "1. Ilmu Pemerintahan\n";
+            } else if (jurusan == 7) { 
+                cout << "1. S1 Sosiologi\n";
+            }
+            break;
+        case 7: 
+            if (jurusan == 1) { 
+                cout << "1. S1 Pendidikan Dokter\n";
+                cout << "2. S1 Farmasi\n";
+            } 
+            break;
+        case 8: 
+		    if (jurusan == 1) { 
+            cout << "1. S1 Ilmu Hukum\n";
+            }
+            break;
+        }
+    }
+  
+void TampilkanAkreditasi(int fakultas, int jurusan, int prodi) {
+    int index = 0;
+    if (fakultas == 1) {
+        if (jurusan == 1) {
+            index = prodi - 1; 
+        } else if (jurusan == 2) {
+            index = 4; 
+        } else if (jurusan == 3) {
+            index = 5; 
+        } else if (jurusan == 4) {
+            index = 6 + (prodi -1); 
+        } else if (jurusan == 5) {
+            index = 8; 
+        }
+    } else if (fakultas == 2) {
+        if (jurusan == 1) {
+            index = 9 + (prodi -1);
+        } else if (jurusan == 2) {
+            index = 15 + (prodi - 1); 
+        } else if (jurusan == 3) {
+            index = 21 + (prodi - 1);
+        } else if (jurusan == 4) {
+            index = 25 + (prodi - 1);
+        }
+    } else if (fakultas == 3) {
+        if (jurusan == 1) {
+            index = 29 + (prodi -1);
+        } else if (jurusan == 2) {
+            index = 31 + (prodi - 1); 
+        } else if (jurusan == 3) {
+            index = 34 + (prodi - 1);
+        } else if (jurusan == 4) {
+            index = 37;
+        } else if (jurusan == 5) {
+            index = 38 + (prodi - 1);
+        } else if (jurusan == 6) {
+            index = 41;
+        } else if (jurusan == 7) {
+            index = 42;
+        }   
+    } else if (fakultas == 4) {
+        if (jurusan == 1) {
+            index = 43 + (prodi -1);
+        } else if (jurusan == 2) {
+            index = 45; 
+        } else if (jurusan == 3) {
+            index = 46 + (prodi - 1);
+        } else if (jurusan == 4) {
+            index = 48;
+        } else if (jurusan == 5) {
+            index = 49;
+        } else if (jurusan == 6) {
+            index = 50;
+        } else if (jurusan == 7) {
+            index = 51 + (prodi - 1);
+        } else if (jurusan == 8) {
+            index = 53 + (prodi - 1);
+        } else if (jurusan == 9) {
+            index = 55;
+        } else if (jurusan == 10) {
+            index = 56 + (prodi - 1);
+       } 
+   } else if (fakultas == 5) {
+        if (jurusan == 1) {
+            index = 58 + (prodi -1);
+        } else if (jurusan == 2) {
+            index = 62; 
+        } else if (jurusan == 3) {
+            index = 63 + (prodi - 1);
+        } 
+   } else if (fakultas == 6) {
+        if (jurusan == 1) {
+            index = 68;
+        } else if (jurusan == 2) {
+            index = 69; 
+        } else if (jurusan == 3) {
+            index = 70;
+        } else if (jurusan == 4) {
+            index = 71 + (prodi - 1);
+        } else if (jurusan == 5) {
+            index = 74;
+        } else if (jurusan == 6) {
+            index = 75;
+        } else if (jurusan == 7) {
+            index = 76;
+        } 
+   } else if (fakultas == 7) {
+        if (jurusan == 1) {
+            index = 77 + (prodi - 1);
+        } 
+   } else if (fakultas == 8) {
+        if (jurusan == 1) {
+            index = 79;
+        }
+    }
+    
+    Akreditasi data = akreditasiData[index];
+    cout << "-------------------------\n";
+    cout << "Akreditasi Program Studi\n";
+    cout << "-------------------------\n";
+    cout << "Fakultas       : " << data.NamaFakultas << endl;
+    cout << "Jurusan        : " << data.NamaJurusan << endl;
+    cout << "Program Studi  : " << data.NamaProdi << endl;
+    cout << "Akreditasi     : " << data.Akreditasi << endl;
+    cout << "Tanggal Berlaku: " << data.TanggalBerlaku << endl;
+}
+
+int main() {
+    int fakultas, jurusan, prodi;
+    cout << "_______________________________________\n";
+    cout << endl;
+    cout << "Selamat Datang di Universitas Lampung\n";
+    cout << "_______________________________________\n";
+    cout << endl;
+    
+    cout << "Informasi Akreditasi Prodi di UNILA\n";
+    cout << endl;
+    TampilkanFakultas();
+    cout << "Masukkan Kode Fakultas: ";
+    cin >> fakultas;
+    cout << endl;
+    
+    TampilkanJurusan(fakultas);
+    cout << "Masukkan Kode Jurusan: ";
+    cin >> jurusan;
+    cout << endl;
+    
+    TampilkanProdi(jurusan, fakultas);
+    cout << "Masukkan Kode Prodi: ";
+    cin >> prodi;
+    cout << endl;
+    
+    TampilkanAkreditasi(fakultas, jurusan, prodi);
+
+    return 0;
+}
