@@ -71,7 +71,7 @@ Akreditasi akreditasiData[]  = {
         {"FEB", "Akuntansi","D3 Akuntansi PSDKU Way Kanan", "Baik", "07-02-2029"},
         {"FEB", "Akuntansi", "D3 Perpajakan", "A", "30-08-2025"},
         {"FEB", "Akuntansi", "S1 Akuntansi", "A", "14-08-2-24"},
-        {"FEB", "Ekonomi Pembangunan", "S1 Ekonomi Pemabangunan", "A", "01-04-2025"},
+        {"FEB", "Ekonomi Pembangunan", "S1 Ekonomi Pembangunan", "A", "01-04-2025"},
         {"FEB", "Manajemen", "D3 Keuangan dan Perbankan", "A", "04-09-2025"},
         {"FEB", "Manajemen", "D3 Manajemen Pemasaran", "A", "30-08-2025"},
         {"FEB", "Manajemen", "D3 Perbankan dan Keuangan PSDKU Lampung Tengah", "Baik", "07-02-2029"},
@@ -380,7 +380,7 @@ void TampilkanAkreditasi(int fakultas, int jurusan, int prodi) {
         if (jurusan == 1) {
             index = 58 + (prodi -1);
         } else if (jurusan == 2) {
-            index = 63; 
+            index = 62; 
         } else if (jurusan == 3) {
             index = 64 + (prodi - 1);
         } 
